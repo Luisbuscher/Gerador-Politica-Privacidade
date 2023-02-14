@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gerador de Politica de privacidade</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="uikit.min.css" />
+        <script src="uikit.min.js"></script>
+        <script src="uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><h1>Gerador de Política de Privacidade e Termos de Uso</h1></header><hr>
+        <form id="formulario">
+
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <a class="uk-form-icon" href="#" uk-icon="icon: pencil"></a>
+                    <input class="uk-input" id="nome_site" type="text" aria-label="Clickable icon" placeholder="Insira o nome do site">
+                </div>
+            </div>
+        
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
+                    <input class="uk-input" id="link_site" type="text" aria-label="Clickable icon" placeholder="Insira o link do site">
+                </div>
+            </div>
+
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input" id="email" type="text" aria-label="Not clickable icon" placeholder="Insira o email para contato">
+                </div>
+            </div>
+
+            <input type="button" value="Gerar Politica de Privacidade" id="gerar" onclick="gerar_politica()"><br><br>
+
+            <center><div class="uk-card uk-card-default uk-card-body uk-width-1-2@m" hidden id="politica">
+                <p id="texto">dwad</p>
+                </div></center>
+        
+        </form>
+        <script src="scriptin.js"></script>
+    </body>
+</html>
